@@ -22,9 +22,9 @@ The goals / steps of this project are the following:
   
 #### 1.Project introduction.
 Data prepare:  
-Data: Kitti Road dataset from [here](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/data_road.zip).  
+Data: Download Kitti Road dataset from [here](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/data_road.zip), then put them into data directory by pathtree.  
 Model:  [VGG16](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/vgg.zip)  
-If data does not exist, the implementation of main.py will download image data and model data automatically.
+If VGG data does not exist, the implementation of main.py will download automatically.
   
 Project data path tree:
 <div class="test">
