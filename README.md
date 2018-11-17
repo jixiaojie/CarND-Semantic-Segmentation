@@ -30,14 +30,14 @@ Project data path tree:
 <div class="test">
 <img src="Docs/PathTree.png" width="300" />
 </div>
-  
-  
+
+   
 Project Graph:
 <div class="test">
 <img src="Docs/Graph.png" width="600" />
 </div>
   
-  
+   
 I implement project by following instructions:
 ```
 python3 main.py
