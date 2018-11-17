@@ -21,20 +21,22 @@ The goals / steps of this project are the following:
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
   
 #### 1.Project introduction.
-Data prepare:
-Data: Kitti Road dataset from [here](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/data_road.zip).
-Model:  [VGG16](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/vgg.zip)
+Data prepare:  
+Data: Kitti Road dataset from [here](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/data_road.zip).  
+Model:  [VGG16](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/vgg.zip)  
 If data does not exist, the implementation of main.py will download image data and model data automatically.
   
 Project data path tree:
 <div class="test">
-<img src="Docs/PathTree.png" width="600" />
+<img src="Docs/PathTree.png" width="300" />
 </div>
+  
   
 Project Graph:
 <div class="test">
 <img src="Docs/Graph.png" width="600" />
 </div>
+  
   
 I implement project by following instructions:
 ```
@@ -45,7 +47,7 @@ python3 main.py
 #### 2.Does the project load the pretrained vgg model?
 The function load_vgg is implemented correctly, code segment:
 ```
-   vgg_tag = 'vgg16'
+    vgg_tag = 'vgg16'
     vgg = tf.saved_model.loader.load(sess, [vgg_tag], vgg_path)
     vgg_input_tensor_name = sess.graph.get_tensor_by_name('image_input:0')
     vgg_keep_prob_tensor_name = sess.graph.get_tensor_by_name('keep_prob:0')
@@ -118,18 +120,18 @@ Hyperparameters:
   
   
 #### 8.Does the project correctly label the road?
-The training accuracy is over 90%
-The contrast between primary image and predicted image
+The training accuracy is over 90%  
+The contrast between primary image and predicted image  
 <div class="test">
-<img src="Docs/p_um_000000.png" width="300" />
-<img src="Docs/t_um_000000.png" width="300" />
+<img src="Docs/p_um_000000.png" width="400" />
+<img src="Docs/t_um_000000.png" width="400" />
 </div>
 <div class="test">
-<img src="Docs/p_umm_000000.png" width="300" />
-<img src="Docs/t_umm_000000.png" width="300" />
+<img src="Docs/p_umm_000000.png" width="400" />
+<img src="Docs/t_umm_000000.png" width="400" />
 </div>
 <div class="test">
-<img src="Docs/p_uu_000000.png" width="300" />
-<img src="Docs/t_uu_000000.png" width="300" />
+<img src="Docs/p_uu_000000.png" width="400" />
+<img src="Docs/t_uu_000000.png" width="400" />
 </div>
 
