@@ -120,7 +120,7 @@ Hyperparameters:
 #### 8.Does the project correctly label the road?
 The training accuracy is over 90%: 
  <div class="test">
-<img src="Docs/Accuracy.png" width="600" />
+<img src="Docs/Accuracy.png" width="400" />
 </div>  
 The contrast between primary image and predicted image  
 <div class="test">
