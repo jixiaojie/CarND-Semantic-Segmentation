@@ -71,12 +71,10 @@ The function layers is implemented correctly, code segment:
     add_conv_output_7_01 = tf.add(output_4, conv_output_7_01, name = "add_conv_output_7_01")
 
     output_7_02 = tf.layers.conv2d_transpose(add_conv_output_7_01, int(4096 / 8), 4, (2, 2), padding = 'same', kernel_regularizer = tf.contrib.layers.l2_regularizer(reg_scale), name = 'output_7_02')
-    #output_7_02 = tf.add(output_4, output_7_02)
     conv_output_7_02 = tf.layers.conv2d(output_7_02, int(4096 / 8), 1, padding = 'same', kernel_regularizer = tf.contrib.layers.l2_regularizer(reg_scale), name = "conv_output_7_02")
     add_conv_output_7_02 = tf.add(output_3, conv_output_7_02, name = "add_conv_output_7_02")
 
     output_7_03 = tf.layers.conv2d_transpose(add_conv_output_7_02, int(4096 / 64), 4, (2, 2), padding = 'same', kernel_regularizer = tf.contrib.layers.l2_regularizer(reg_scale), name = 'output_7_03')
-    #output_7_03 = tf.add(output_3, output_7_03)
     conv_output_7_03 = tf.layers.conv2d(output_7_03, int(4096 / 16), 1, padding = 'same', kernel_regularizer = tf.contrib.layers.l2_regularizer(reg_scale), name = "conv_output_7_03")
 
     output_7_04 = tf.layers.conv2d_transpose(conv_output_7_03, int(4096 / 128) , 4, (2, 2), padding = 'same', kernel_regularizer = tf.contrib.layers.l2_regularizer(reg_scale), name = 'output_7_04')
